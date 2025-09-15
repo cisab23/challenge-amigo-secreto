@@ -36,7 +36,7 @@ function limpiarInput(){
 
 function sortearAmigo(){
     if (listaDeAmigos.length < 2){
-        alert("Ingresa mas nombres para hacer el sorteo.");
+        alert("Ingresa al menos 2 nombres para hacer el sorteo.");
     } 
     else {
     seleccion = Math.floor(Math.random()*listaDeAmigos.length);
@@ -46,7 +46,7 @@ function sortearAmigo(){
     resultado.innerHTML = "";
     
     let nombre = document.createElement("li");
-    nombre.textContent = `El amigo seleccionado es ${amigoSecreto}!`
+    nombre.textContent = `¡El amigo seleccionado es ${amigoSecreto}!`
     resultado.appendChild(nombre);
     return;
     }
